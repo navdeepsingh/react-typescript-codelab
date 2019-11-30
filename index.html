@@ -5,8 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    body{
+      font-size: 24px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: -webkit-gradient(linear,left top,right top,from(#eeeeee),to(#528ece));
+      padding: 0px 50px;
+    }
+    h2 a {
+      color: black;
+    }
+    .result-wrapper {
+      margin: 0 .2em;
+      padding: .2em .4em .1em;
+      font-size: 85%;
+      background: rgba(0,0,0,.06);
+      border: 1px solid rgba(0,0,0,.06);
+      border-radius: 3px;
+    }
+  </style>
 </head>
 <body>
-  Testing from Codelab
+    <h2><a href="https://www.meetup.com/ZEIT-India-Community/events/266439547/" target="_blank">Codelab: Pure Typescript Apps, ReactJS Apps in Typescript and more</a></h3>
+
+    <h4>Notes:</h4>
+    <ul>
+      <li>Mobile deployment: zeit.co/new</li>
+      <li>Create Tsconfig tsc --init</li>
+    </ul>
+
+    <div class="result-wrapper">
+      <strong>Result:</strong> <code id="result"></code>
+    </div>
+    <script src="./dist/greetings.js"></script>
 </body>
 </html>
